@@ -19,6 +19,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePlanter.Core.Tests", "T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePlanter.Integration.Tests", "Tests\Integration\CodePlanter.Integration.Tests.csproj", "{64022EBF-1C57-48D9-91AE-FC0CB35FFB57}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{1C2DEFC6-C9F1-48F1-AACE-3335089DC253}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePlanter.UI.Console", "UI\Console\CodePlanter.UI.Console.csproj", "{35DB5036-AB27-4BE5-9A5F-C79B71C207AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0228D795-6C9D-4C61-8AAB-50C4C9DCE02B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Client", "UI\Web\Client\", "{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64832"
+		Debug.AspNetCompiler.PhysicalPath = "UI\Web\Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64832\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64832"
+		Release.AspNetCompiler.PhysicalPath = "UI\Web\Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64832\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "64832"
+		SlnRelativePath = "UI\Web\Client\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodePlanter.UI.Web", "UI\Web\Server\CodePlanter.UI.Web.csproj", "{AF793559-E994-4ED7-9BD4-EC4F54B5DF35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +66,18 @@ Global
 		{64022EBF-1C57-48D9-91AE-FC0CB35FFB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64022EBF-1C57-48D9-91AE-FC0CB35FFB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64022EBF-1C57-48D9-91AE-FC0CB35FFB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35DB5036-AB27-4BE5-9A5F-C79B71C207AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35DB5036-AB27-4BE5-9A5F-C79B71C207AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35DB5036-AB27-4BE5-9A5F-C79B71C207AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35DB5036-AB27-4BE5-9A5F-C79B71C207AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{AF793559-E994-4ED7-9BD4-EC4F54B5DF35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF793559-E994-4ED7-9BD4-EC4F54B5DF35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF793559-E994-4ED7-9BD4-EC4F54B5DF35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF793559-E994-4ED7-9BD4-EC4F54B5DF35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +85,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{03F5F90B-8CD4-4317-A182-1F494F8BE9E8} = {DAB276B1-2189-4DEA-9C7A-2F4E632F5C3F}
 		{64022EBF-1C57-48D9-91AE-FC0CB35FFB57} = {DAB276B1-2189-4DEA-9C7A-2F4E632F5C3F}
+		{35DB5036-AB27-4BE5-9A5F-C79B71C207AB} = {1C2DEFC6-C9F1-48F1-AACE-3335089DC253}
+		{0228D795-6C9D-4C61-8AAB-50C4C9DCE02B} = {1C2DEFC6-C9F1-48F1-AACE-3335089DC253}
+		{36B3DBDD-0C6B-4399-880A-4B548BFCC5FC} = {0228D795-6C9D-4C61-8AAB-50C4C9DCE02B}
+		{AF793559-E994-4ED7-9BD4-EC4F54B5DF35} = {0228D795-6C9D-4C61-8AAB-50C4C9DCE02B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D58DB86-98FB-495D-B545-8BB95DF7C14A}
